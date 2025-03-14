@@ -1,0 +1,31 @@
+/* Styling for navigation bar */
+nav {
+    background-color: darkblue;
+    padding: 10px;
+  }
+  
+  /* Styling for navigation links */
+  nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+  }
+  
+  /* Styling for h1 headings */
+  h1 {
+    color: darkblue;
+  }
+  
+  /* Styling for images */
+  img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+  }
+  
+  /* Styling for paragraphs */
+  p {
+    padding: 10px;
+  }  
