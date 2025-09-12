@@ -1,28 +1,23 @@
-/* Styling for navigation bar */
 nav {
     background-color: darkblue;
     padding: 10px;
 }
 
-/* Styling for navigation links */
 nav a {
     color: white;
     display: block;
     padding: 20px;
 }
 
-/* Styling for h1 headings */
 h1 {
     color: darkblue;
 }
 
-/* Limit main content width */
 main {
     max-width: 840px;
     margin: 0 auto;
 }
 
-/* Styling for the profile image inside main */
 main img {
     width: 150px;
     height: auto;
@@ -31,9 +26,6 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
-/* Cursor is here. week3 Learning Activities: Code Comments */
-
-/* Styling for the aside section */
 aside {
     width: 20rem;
     margin: 1rem;
@@ -44,22 +36,19 @@ aside {
     text-align: center;
 }
 
-/* Styling for the aside image */
 aside img {
     width: 200px;
     height: auto;
     border: 1px solid black;
 }
 
-/* Remove padding from all paragraphs */
 p {
     padding: 0;
 }
 
-/* Styling for the footer */
 footer {
-    margin-top: 15px; /* Adjusted to match assignment example */
-    border-top: 1px solid #000; /* Adjusted to match assignment example */
+    margin-top: 15px; 
+    border-top: 1px solid #000; 
     text-align: center;
     padding: 10px;
 }
