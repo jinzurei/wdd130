@@ -36,7 +36,6 @@ header, main, footer{
 
 header, footer {
     background-color: var(--secondary-color);
-    border: 1px solid var(--primary-color);
     padding: .75rem 1rem;
 }
 
@@ -102,6 +101,16 @@ nav, p, section, article{
   width: 200px;
   margin: 0 0 8px 12px;
 }
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p{ 
+    margin: 0; 
+} 
 
 .socialmedia a { 
     text-decoration: none; 
