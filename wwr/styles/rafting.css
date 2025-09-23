@@ -8,11 +8,11 @@
   --accent2-color:   #A0BBF2; /* light sky blue */
   --accent3-color:   #F27272; /* coral highlight */
 
-  /* Font Variables */
+  /* Font Variables 
   --heading-font: "Macondo", serif;
   --body-font: "Macondo", system-ui, sans-serif;
   --mono-font: "VT323", monospace;
-}
+}*/
 
 * { 
     margin: 0; padding: 0; box-sizing: border-box; 
