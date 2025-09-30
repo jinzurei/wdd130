@@ -1,4 +1,4 @@
-<!-- 9/19/25 -> 9/23/25 -->
+<!-- 9/28/25 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,58 +9,121 @@
     <meta name="author" content="Tanner Livingston">
     <title>Rafting Tours</title>
     <link rel="stylesheet" href="styles/rafting.css">
-    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Tagesschrift&family=VT323&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="images/transparentlogo.webp" alt="rafting tours logo" width="250">
-        <nav>
-            <ul>
-                <li><a href="wdd130/index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="header-flex">
+            <img src="images/transparentlogo.webp" alt="Rapidds Rafting logo: transparent background" width="250">
+            <nav>
+                <ul>
+                    <li><a href="wdd130/index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/whitewaterrafting.webp" alt="rafters-running-whitewater-rapids" sizes="100">
-            <h1>About Us | Rapidds Rafting</h1>
-            <article>
-                <img src="images/smilingclient.webp" alt="smiling-client-in-rafting-gear">
-                <p>Our purpose is to create unforgettable river adventures with safety, stewardship, and stoke.</p>
-            </article>
-        </div>
-        <section>
-            <h2>History</h2>
-            <p>Founded by local guides born and raised for the Green River rapids, we grew from one raft to a
-                community-driven outfitter.</p>
+        <section class="hero">
+            <img class="hero__bg" src="images/whitewaterrafting.webp"
+                alt="Rafting group running whitewater rapids in Utah">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1>About Us | Rapidds Rafting</h1>
+                <div class="hero__blurb">
+                    <p>Our purpose is to create unforgettable river adventures that bring people closer to the wild
+                        beauty of the canyonlands,
+                        journeys filled with excitement, connection, and discovery. Every trip is guided by our
+                        commitment to safety, our
+                        responsibility of stewardship for the river and its environment, and the pure stoke that comes
+                        from paddling together
+                        through the rapids, sharing laughter, and building memories that last a lifetime.</p>
+                    <img src="images/smilingclient.webp" alt="Smiling client wearing rafting gear and helmet"
+                        class="hero__img">
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Adventure Awaits You!</h2>
+        <section class="history">
+            <h2>History</h2>
+            <div class="history__grid">
+                <p>Founded by local guides born and raised for the Green River rapids, we grew from one raft to a
+                    community-driven
+                    outfitter. What started as weekend runs for friends and neighbors turned into a small garage
+                    operation, then a full
+                    fleet as word spread that our trips felt like rafting with family. We learned every bend and eddy
+                    the hard way—early
+                    mornings, late take-outs, and a commitment to safety that's now baked into how we train every guide.
+                    As Moab blossomed,
+                    we stayed rooted: partnering with local schools and businesses, volunteering for river clean-ups,
+                    and mentoring new
+                    boaters each spring. Today our boats carry first-timers, multi-day adventurers, and returning guests
+                    who bring their
+                    kids back to meet the same guides they trusted years ago. Through high water and low, our mission
+                    hasn't changed: run
+                    fun, responsible trips, take care of our rivers, and treat every guest like a longtime friend.</p>
+                <figure class="history__image">
+                    <img src="images/historicphoto.webp" alt="Historic rafting photo: early river adventure"
+                        width="320">
+                </figure>
+                <p>Our team is passionate about sharing the thrill of whitewater with new friends and old, always
+                    putting safety and fun
+                    first. Every trip is an opportunity to spark laughter, build memories, and inspire a deeper respect
+                    for the river. From
+                    teaching first-timers how to paddle through their first rapid to guiding seasoned adventurers down
+                    challenging
+                    stretches, we bring the same energy and care to every ride. Our guides are not only trained
+                    professionals, but also
+                    storytellers and stewards of the canyon, pointing out hidden petroglyphs, wildlife along the banks,
+                    and the unique
+                    geology that makes Moab so unforgettable. Above all, we believe that adventure and safety go hand in
+                    hand, and that the
+                    best days on the water are the ones where everyone leaves with soaked clothes, tired arms, and a
+                    huge smile.</p>
+            </div>
+        </section>
+        <section class="adventures">
+            <h2>Adventures</h2>
+            <div class="adventures__grid">
+                <figure>
+                    <img src="images/bigdrops.webp" alt="The Big Drops rapid in Cataract Canyon">
+                    <figcaption>The Big Drops</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/funnelfalls.webp" alt="Funnel Falls rapid on the Colorado River">
+                    <figcaption>Funnel Falls</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/halfday.webp" alt="Fisher Towers section near Moab">
+                    <figcaption>Fisher Towers Half-Day</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cataractcanyon.webp" alt="Cataract Canyon expedition">
+                    <figcaption>Cataract Canyon Expedition</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/westwater.webp" alt="Westwater Canyon rapids on the Colorado River">
+                    <figcaption>Westwater Canyon</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
     <footer>
-        <footer>
-            <p>&copy;2025 | Rapidds @ Moab | Tanner Livingston</p>
-            <nav class="socialmedia">
-                <a href="https://www.facebook.com">
-                    <img src="images/facebooklogo.webp" alt="Facebook Icon" width="75">
-                </a>
-                <a href="https://x.com">
-                    <img src="images/xlogo.webp" alt="X/Twitter Icon" width="75">
-                </a>
-                <a href="https://www.tiktok.com/">
-                    <img src="images/tiktoklogo.webp" alt="TikTok Icon" width="75">
-                </a>
-            </nav>
-        </footer>
-
+        <span>&copy;2025 | Rapidds @ Moab | Tanner Livingston</span>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com">
+                <img src="images/facebooklogo.webp" alt="Facebook social icon">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/tiktoklogo.webp" alt="Instagram social icon">
+            </a>
+            <a href="https://x.com">
+                <img src="images/xlogo.webp" alt="X (Twitter) social icon">
+            </a>
+        </div>
     </footer>
 
 </body>
