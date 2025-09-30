@@ -456,7 +456,8 @@ feat(history): three-column grid with responsive stack
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.2);
 }
-@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Tagesschrift&family=VT323&display=swap');
+
+
 
 :root{
   /* Arches palette mapped to variables */
@@ -465,11 +466,14 @@ feat(history): three-column grid with responsive stack
   --accent1-color:   #732002; /* dark red-brown (great for contrast) */
   --accent2-color:   #A0BBF2; /* light sky blue */
   --accent3-color:   #F27272; /* coral highlight */
+  --heading-font: 'Segoe UI', 'Arial', sans-serif;
+  --body-font: 'Segoe UI', 'Arial', sans-serif;
 }
 
 * { 
     margin: 0; padding: 0; box-sizing: border-box; 
 }
+
 
 body{
   font-family: var(--body-font);
@@ -497,6 +501,7 @@ header nav {
   padding: 0;
 }
 
+
 h1, h2{
   font-family: var(--heading-font);
   color: var(--primary-color);
@@ -519,7 +524,7 @@ nav, p, section, article{
   position: absolute;
   top: 20px;
   width: 30rem;
-  padding: 16px;
+  padding: 12px;
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
