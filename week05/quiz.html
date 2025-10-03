@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML &amp; CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <header>
+        <h1>HTML &amp; CSS Basics Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Test Your Knowledge</legend>
+
+                <label for="q1">1. What does HTML stand for?</label><br>
+                <input type="text" id="q1" name="q1"><br><br>
+
+                <label for="q2">2. Write a short note on the purpose of the &lt;head&gt; element in HTML:</label><br>
+                <textarea id="q2" name="q2" rows="3" placeholder="Your answer..."></textarea><br><br>
+
+                <label for="q3">3. Which tag is used to create a hyperlink in HTML?</label><br>
+                <select id="q3" name="q3">
+                    <option value="">--Select--</option>
+                    <option value="a">&lt;a&gt;</option>
+                    <option value="link">&lt;link&gt;</option>
+                    <option value="href">&lt;href&gt;</option>
+                </select><br><br>
+
+                <label>4. Which of the following are valid CSS selectors? (Select all that apply)</label><br>
+                <input type="checkbox" id="q4a" name="q4" value=".classname">
+                <label for="q4a">.classname</label><br>
+                <input type="checkbox" id="q4b" name="q4" value="#idname">
+                <label for="q4b">#idname</label><br>
+                <input type="checkbox" id="q4c" name="q4" value="element">
+                <label for="q4c">element</label><br>
+                <input type="checkbox" id="q4d" name="q4" value="@media">
+                <label for="q4d">@media</label><br><br>
+
+                <button type="submit">Submit Quiz</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 HTML &amp; CSS Quiz created by Tanner L</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+* { box-sizing: border-box; }
+:root {
+	--blue: #1677ff;
+	--blue-600: #0d5fe6;
+	--text: #1f2328;
+	--muted: #667085;
+	--border: #e6e8ec;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+	color: var(--text);
+	background: var(--blue);
+	display: grid;
+	place-items: start center;
+	padding: 48px 16px;
+}
+
+main {
+	width: 100%;
+	max-width: 720px;
+	background: #fff;
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	box-shadow: 0 12px 30px rgba(0,0,0,.08);
+	overflow: hidden;
+}
+
+header {
+	width: 100%;
+	max-width: 720px;
+	background: #fff;
+	border: 1px solid var(--border);
+	border-bottom: none;
+	border-radius: 12px 12px 0 0;
+	box-shadow: 0 8px 20px rgba(0,0,0,.06);
+	transform: translateY(4px);
+}
+
+header h1 {
+	margin: 0;
+	padding: 18px 22px;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: .2px;
+	position: relative;
+	color: var(--text);
+}
+
+header h1::after {
+	content: "";
+	display: block;
+	width: 140px;
+	height: 3px;
+	background: var(--blue);
+	border-radius: 3px;
+	margin-top: 8px;
+}
+
+form {
+	padding: 22px;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+legend {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 14px;
+}
+
+label {
+	display: block;
+	margin: 14px 0 6px;
+	font-weight: 600;
+}
+
+input[type="text"],
+textarea,
+select {
+	width: 100%;
+	padding: 12px 14px;
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	outline: none;
+	font: inherit;
+	background: #f9fafb;
+	transition: border-color .15s, box-shadow .15s, background .15s;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+	background: #fff;
+	border-color: var(--blue);
+	box-shadow: 0 0 0 3px rgba(22,119,255,.15);
+}
+
+input[type="checkbox"] {
+	transform: translateY(1px);
+	margin-right: 8px;
+}
+#q4a, #q4b, #q4c, #q4d { margin-top: 6px; }
+label[for="q4a"], label[for="q4b"], label[for="q4c"], label[for="q4d"] {
+	display: inline-block;
+	margin: 6px 0 0;
+}
+
+button[type="submit"] {
+	display: inline-block;
+	margin-top: 18px;
+	padding: 10px 16px;
+	background: var(--blue);
+	color: #fff;
+	font-weight: 700;
+	border: 1px solid var(--blue);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background .15s, transform .02s, box-shadow .15s;
+	box-shadow: 0 6px 14px rgba(22,119,255,.28);
+}
+
+button[type="submit"]:hover { background: var(--blue-600); }
+button[type="submit"]:active { transform: translateY(1px); }
+
+footer {
+	color: #f3f5ff;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 14px;
+}
