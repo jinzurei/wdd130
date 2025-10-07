@@ -1,0 +1,139 @@
+<!-- 9/28/25 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Rapidds Rafting in Moab, Utah. Reach out for questions, trip bookings, and customer support.">
+    <meta name="author" content="Tanner Livingston">
+    <title>Contact Us | Rapidds Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-flex">
+            <img src="images/transparentlogo.webp" alt="Rapidds Rafting logo: transparent background" width="250">
+            <nav>
+                <ul>
+                    <li><a href="wdd130/index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-page">
+        <!-- Company block -->
+        <section class="company-block" aria-labelledby="company-title">
+            <h1 id="company-title">Rapidds Rafting Company</h1>
+            <address class="company-address">
+                123 Main River Street<br>
+                Moab, Utah<br>
+                +1 999 999 9999<br>
+                <a href="mailto:info@whitewater.com">info@Rapidds.com</a>
+            </address>
+        </section>
+
+        <!-- Two-column area: Map (left) + Form (right) -->
+        <section class="contact-grid" aria-label="Contact and Map">
+            <!-- LEFT: MAP -->
+            <div class="map-card">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49910.692245679136!2d-109.54422893383801!3d38.5702149021496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8747e1e59ab82d8d%3A0xb32b17af1d5c42d!2sMoab%2C%20UT%2084532!5e0!3m2!1sen!2sus!4v1759775775456!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- RIGHT: CONTACT FORM -->
+            <form class="contact-card" action="#" method="post">
+                <fieldset>
+                    <legend class="sr-only">Contact Form</legend>
+
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" required placeholder="Type your preferred name here">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required placeholder="Type your email here">
+                    </div>
+
+                    <fieldset class="form-row form-row--stacked">
+                        <legend>Message Purpose</legend>
+                        <label class="radio">
+                            <input type="radio" name="purpose" value="general" checked>
+                            General Inquiry
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="purpose" value="website">
+                            Website Suggestion
+                        </label>
+                    </fieldset>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us more!"></textarea>
+                    </div>
+
+                    <label class="checkbox">
+                        <input type="checkbox" name="subscribe" value="yes">
+                        Please Subscribe me to the monthly newsletter
+                    </label>
+
+                    <button type="submit" class="btn-primary">Get in Touch!</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Team section -->
+        <section class="team" aria-labelledby="team-title">
+            <h2 id="team-title">We Are Here to Serve You</h2>
+
+            <div class="team-grid">
+                <article class="profile-card">
+                    <img src="images/employee1.webp" alt="Danny Phantom Raft Guide" class="profile-photo" />
+                    <p class="profile-caption">Danny Phantom Raft Guide</p>
+                </article>
+
+                <article class="profile-card">
+                    <img src="images/employee2.webp" alt="Danny Phantom Raft Guide" class="profile-photo" />
+                    <p class="profile-caption">Danny Phantom Raft Guide</p>
+                </article>
+
+                <article class="profile-card">
+                    <img src="images/employee3.webp" alt="Danny Phantom Raft Guide" class="profile-photo" />
+                    <p class="profile-caption">Danny Phantom Raft Guide</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    </main>
+
+    <footer>
+        <span>&copy;2025 | Rapidds @ Moab | Tanner Livingston</span>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com">
+                <img src="images/facebooklogo.webp" alt="Facebook social icon">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/tiktoklogo.webp" alt="Instagram social icon">
+            </a>
+            <a href="https://x.com">
+                <img src="images/xlogo.webp" alt="X (Twitter) social icon">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
