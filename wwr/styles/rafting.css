@@ -1,89 +1,22 @@
-.profile-photo {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 0.75rem;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.08);
-  margin-bottom: 1rem;
-  border: 2px solid #b0b8c9;
-}
-.map-card iframe {
-  transition: box-shadow 0.18s, transform 0.13s;
-}
-.map-card iframe:hover, .map-card iframe:focus {
-  box-shadow: 0 6px 24px rgba(22, 103, 166, 0.22), 0 2px 16px rgba(0,0,0,0.10);
-  transform: translateY(-4px) scale(1.03);
-  z-index: 2;
-}
-.history__image img {
-  transition: box-shadow 0.18s, transform 0.13s, filter 0.13s;
-  cursor: pointer;
-}
-.history__image img:hover, .history__image img:focus {
-  box-shadow: 0 6px 24px rgba(22, 103, 166, 0.22), 0 2px 16px rgba(0,0,0,0.10);
-  transform: translateY(-4px) scale(1.03);
-  filter: brightness(1.07);
-  z-index: 2;
-}
-
-/* Modal styles for enlarged history image */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(30,30,40,0.75);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  transition: opacity 0.18s;
-}
-.modal-content {
-  position: relative;
-  background: #fff;
+/* === Variables === */
+.card {
+  background: #f9fafb;
+  border: 1.5px solid #d1d5db;
   border-radius: 1rem;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-  padding: 1.5rem;
-  max-width: 90vw;
-  max-height: 90vh;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-.modal-content img {
-  max-width: 80vw;
-  max-height: 70vh;
-  border-radius: 0.7rem;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.13);
-}
-.modal-close {
-  position: absolute;
-  top: 0.7rem;
-  right: 1.1rem;
-  font-size: 2.2rem;
-  color: #0367A6;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 2;
-  transition: color 0.15s;
-}
-.modal-close:hover, .modal-close:focus {
-  color: #BF6B04;
-}
-.adventures__grid figure {
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  box-sizing: border-box;
+  gap: 0.75rem;
   transition: box-shadow 0.18s, transform 0.13s;
 }
-
-.adventures__grid figure:hover, .adventures__grid figure:focus-within {
+.card:hover, .card:focus {
   box-shadow: 0 6px 24px rgba(22, 103, 166, 0.22), 0 2px 16px rgba(0,0,0,0.10);
   transform: translateY(-4px) scale(1.03);
   z-index: 2;
-}
-.profile-card {
-  transition: box-shadow 0.18s, transform 0.13s;
 }
 
 .profile-card:hover, .profile-card:focus-within {
@@ -122,18 +55,21 @@
   border: 1.5px solid #d1d5db;
   border-radius: 0.8rem;
   box-shadow: 0 1px 8px rgba(0,0,0,0.06);
-  padding: 1.2rem 1rem 1rem 1rem;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 220px;
-  min-width: 0;
+  max-width: 260px;
+  min-width: 180px;
+  box-sizing: border-box;
+  gap: 0.75rem;
+  justify-content: flex-start;
 }
 
 .profile-photo-placeholder {
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
   background: #e3e8f0;
   border: 2px dashed #b0b8c9;
   border-radius: 0.7rem;
@@ -149,8 +85,9 @@
 .profile-caption {
   text-align: center;
   color: #333;
-  font-size: 1rem;
-  margin-top: 0.2rem;
+  font-size: 1.08rem;
+  margin: 0.2rem 0 0.2rem 0;
+  word-break: break-word;
 }
 
 @media (max-width: 900px) {
@@ -351,10 +288,19 @@ footer span {
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
   max-width: 1100px;
+  
+/* Shared grid utility classes */
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
   margin: 0 auto 2.5rem auto;
   padding: 0 1rem;
 }
-.adventures__grid figure {
+  
+/* Shared card utility class */
+.card {
   background: rgba(255,255,255,0.85);
   border-radius: 1rem;
   box-shadow: 0 2px 16px rgba(0,0,0,0.10);
@@ -363,6 +309,18 @@ footer span {
   flex-direction: column;
   align-items: center;
   padding: 1rem 1rem 0.5rem 1rem;
+  transition: box-shadow 0.18s, transform 0.13s;
+}
+  
+/* Adventures section: horizontal grid of five figures */
+  margin: 0 auto 2.5rem auto;
+  padding: 0 1rem;
+}
+
+.adventures__grid figure:hover, .adventures__grid figure:focus {
+  box-shadow: 0 6px 24px rgba(22, 103, 166, 0.22), 0 2px 16px rgba(0,0,0,0.10);
+  transform: translateY(-4px) scale(1.03);
+  z-index: 2;
 }
 .adventures__grid img {
   width: 100%;
@@ -393,12 +351,6 @@ footer span {
   }
 }
 
-.header-flex {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: 1rem;
-}
 
 /* Footer Styles */
 footer {
@@ -811,7 +763,8 @@ body{
   color: var(--accent1-color);
 }
 
-header {
+
+header > div {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
