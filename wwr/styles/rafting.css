@@ -1,3 +1,10 @@
+/* Team profile photo: rounded corners and fixed size */
+.profile-photo {
+  border-radius: 0.75rem;
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+}
 /* === Variables === */
 .card {
   background: #f9fafb;
