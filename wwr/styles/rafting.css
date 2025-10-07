@@ -288,8 +288,11 @@ footer span {
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
   max-width: 1100px;
-  
-/* Shared grid utility classes */
+  margin: 0 auto 2.5rem auto;
+  padding: 0 1rem;
+}
+
+/* Shared grid utility class */
 .grid-5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -298,7 +301,7 @@ footer span {
   margin: 0 auto 2.5rem auto;
   padding: 0 1rem;
 }
-  
+
 /* Shared card utility class */
 .card {
   background: rgba(255,255,255,0.85);
@@ -310,11 +313,6 @@ footer span {
   align-items: center;
   padding: 1rem 1rem 0.5rem 1rem;
   transition: box-shadow 0.18s, transform 0.13s;
-}
-  
-/* Adventures section: horizontal grid of five figures */
-  margin: 0 auto 2.5rem auto;
-  padding: 0 1rem;
 }
 
 .adventures__grid figure:hover, .adventures__grid figure:focus {
