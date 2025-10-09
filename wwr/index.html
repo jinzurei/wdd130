@@ -1,0 +1,95 @@
+<!-- Home Page | Rapidds Rafting -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Home page for Rapidds Rafting. Experience unforgettable whitewater adventures in Moab, Utah.">
+    <meta name="author" content="Tanner Livingston">
+    <title>Home | Rapidds Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-flex">
+            <img src="images/transparentlogo.webp" alt="Rapidds Rafting logo: transparent background" width="250">
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img class="hero__bg" src="images/blueraft.webp" alt="Rafting group running whitewater rapids in Utah">
+            <h1
+                style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:30rem;padding:12px;text-align:center;opacity:0.85;background-color:#732002;color:#fff;z-index:2;border-radius:0.7rem;box-shadow:0 2px 8px rgba(0,0,0,0.15);font-size:2.2rem;">
+                Unforgettable Whitewater Adventures Await</h1>
+        </section>
+        <section class="intro-grid"
+            style="display:flex;gap:2.5rem;max-width:1100px;margin:2rem auto;align-items:flex-start;">
+            <form class="contact-card" style="flex:1 1 0;max-width:420px;min-width:260px;">
+                <fieldset>
+                    <legend class="sr-only">Newsletter Sign Up</legend>
+                    <div class="form-row">
+                        <label for="newsletter-name">Name</label>
+                        <input id="newsletter-name" name="name" type="text" required placeholder="Your name">
+                    </div>
+                    <div class="form-row">
+                        <label for="newsletter-email">Email</label>
+                        <input id="newsletter-email" name="email" type="email" required placeholder="Your email">
+                    </div>
+                    <button type="submit" class="btn-primary">Sign Up for Newsletter</button>
+                </fieldset>
+            </form>
+            <div style="flex:2 1 0;text-align:center;max-width:700px;align-self:center;">
+                <h2 style="margin-bottom:1.5rem;font-size:2rem;color:#0367A6;">Ready for the ride of your life?</h2>
+                <div style="margin-bottom:2rem;">
+                    <a href="trips.html" class="btn-primary"
+                        style="font-size:1.25rem;padding:0.7rem 2.2rem;border-radius:1.5rem;display:inline-block;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.10);text-decoration:none;">Book
+                        Your Adventure Now</a>
+                </div>
+                <p>Welcome to Rapidds Rafting! Join us for thrilling river journeys, expert guides, and memories that
+                    last a lifetime. Explore our trips, meet our team, and discover the best of Moab's canyonlands.</p>
+            </div>
+        </section>
+        <section class="offerings-grid">
+            <div class="offering">
+                <img src="images/halfday.webp" alt="Fisher Towers section near Moab">
+                <h3>Fisher Towers Half-Day</h3>
+                <p>Perfect for families and first-timers, this half-day adventure offers stunning views, gentle rapids,
+                    and expert guides. Experience the beauty of Moab's canyonlands in a safe, fun environment.</p>
+            </div>
+            <div class="offering">
+                <img src="images/cataractcanyon.webp" alt="Cataract Canyon expedition">
+                <h3>Cataract Canyon Expedition</h3>
+                <p>For thrill-seekers and seasoned adventurers, our multi-day Cataract Canyon trips feature big water,
+                    remote wilderness, and unforgettable camaraderie. Book now for the ultimate whitewater experience!
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>&copy;2025 | Rapidds @ Moab | Tanner Livingston</span>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com">
+                <img src="images/facebooklogo.webp" alt="Facebook social icon">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/tiktoklogo.webp" alt="Instagram social icon">
+            </a>
+            <a href="https://x.com">
+                <img src="images/xlogo.webp" alt="X (Twitter) social icon">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

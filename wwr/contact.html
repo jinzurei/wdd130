@@ -14,14 +14,14 @@
 
 <body>
     <header>
-        <div class="container flex items-center justify-between py-md">
+        <div class="header-flex">
             <img src="images/transparentlogo.webp" alt="Rapidds Rafting logo: transparent background" width="250">
             <nav>
                 <ul>
-                    <li><a href="wdd130/index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="trips.html">Trips</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,8 +34,8 @@
             <address class="company-address">
                 123 Main River Street<br>
                 Moab, Utah<br>
-                +1 999 999 9999<br>
-                <a href="mailto:info@whitewater.com">info@Rapidds.com</a>
+                <span aria-label="Phone">+1 999 999 9999</span><br>
+                <a href="mailto:info@Rapidds.com">info@Rapidds.com</a>
             </address>
         </section>
 
@@ -48,18 +48,20 @@
             </div>
 
             <!-- RIGHT: CONTACT FORM -->
-            <form class="contact-card" action="#" method="post">
+            <form class="contact-card" action="#" method="post" aria-labelledby="contact-form-title">
                 <fieldset>
-                    <legend class="sr-only">Contact Form</legend>
+                    <legend id="contact-form-title" class="sr-only">Contact Form</legend>
 
                     <div class="form-row">
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" required placeholder="Type your preferred name here">
+                        <label for="name">Name <span aria-hidden="true" style="color:red;">*</span></label>
+                        <input id="name" name="name" type="text" required placeholder="Type your preferred name here"
+                            autocomplete="name">
                     </div>
 
                     <div class="form-row">
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" required placeholder="Type your email here">
+                        <label for="email">Email <span aria-hidden="true" style="color:red;">*</span></label>
+                        <input id="email" name="email" type="email" required placeholder="Type your email here"
+                            autocomplete="email">
                     </div>
 
                     <fieldset class="form-row form-row--stacked">
@@ -85,7 +87,7 @@
 
                     <label class="checkbox">
                         <input type="checkbox" name="subscribe" value="yes">
-                        Please Subscribe me to the monthly newsletter
+                        Please subscribe me to the monthly newsletter
                     </label>
 
                     <button type="submit" class="btn-primary">Get in Touch!</button>
